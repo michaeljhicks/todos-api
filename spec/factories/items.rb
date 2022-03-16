@@ -1,6 +1,7 @@
 FactoryBot.define do
-  factory :todo do
-    title { Faker::Lorem.word }
-    created_by { Faker::Number.number(10) }
+  factory :item do
+    name { Faker::Movies::StarWars.character }
+    done false
+    todo_id nil
   end
 end
